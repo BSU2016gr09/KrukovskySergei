@@ -83,8 +83,8 @@ int getRandomNumber(int a)
 int throwBlocksByCommputer()
 {
     int number1=0, number2=0;
-    number1 = getRandomNumber(17);
-    number2 = getRandomNumber(19);
+    number1 = getRandomNumber(17);//–í–æ–æ–±—â–µ –Ω–µ –ø–æ–Ω—è–ª!!!! –ü–æ–¥–æ–π–¥–∏-–æ–±—ä—è—Å–Ω–∏....
+    number2 = getRandomNumber(19);//–í–æ–æ–±—â–µ –Ω–µ –ø–æ–Ω—è–ª!!!! –ü–æ–¥–æ–π–¥–∏-–æ–±—ä—è—Å–Ω–∏....
     drawThrow(number1,number2);
     return number1 + number2;
 }
@@ -92,8 +92,8 @@ int throwBlocksByCommputer()
 int throwBlocksByUser()
 {
     int number1=0, number2=0;
-    number1 = getRandomNumber(23+userName.size());
-    number2 = getRandomNumber(29+userName.size());
+    number1 = getRandomNumber(23+userName.size());//–í–æ–æ–±—â–µ –Ω–µ –ø–æ–Ω—è–ª!!!! –ü–æ–¥–æ–π–¥–∏-–æ–±—ä—è—Å–Ω–∏....
+    number2 = getRandomNumber(29+userName.size());//–í–æ–æ–±—â–µ –Ω–µ –ø–æ–Ω—è–ª!!!! –ü–æ–¥–æ–π–¥–∏-–æ–±—ä—è—Å–Ω–∏....
     drawThrow(number1,number2);
     return number1 + number2;
 }
@@ -118,8 +118,8 @@ bool countScore(int id, int score)
 
 void printScore()
 {
-    cout<<"—˜∏Ú ÍÓÏÔ˛ÚÂ‡: " << scoreCommputer<< endl;
-    cout<< "—˜∏Ú Ë„ÓÍ‡: " << scoreUser<< endl;
+    cout<<"√ë√∑¬∏√≤ √™√Æ√¨√Ø√æ√≤√•√∞√†: " << scoreCommputer<< endl;
+    cout<< "√ë√∑¬∏√≤ √®√£√∞√Æ√™√†: " << scoreUser<< endl;
 }
 
 void getWiner()
@@ -137,21 +137,21 @@ void getWiner()
 }
 void startGames()
 {
-    cout<< "¬‚Â‰ËÚÂ Î˛·ÓÈ ÒËÏ‚ÓÎ ‰Îˇ Ì‡˜‡Î‡ Ë„˚.";
+    cout<< "√Ç√¢√•√§√®√≤√• √´√æ√°√Æ√© √±√®√¨√¢√Æ√´ √§√´√ø √≠√†√∑√†√´√† √®√£√∞√ª.";
             string k;
             cin >> k;
     while(scoreCommputer < 50 && scoreUser < 50){
 
-            cout<< "¡ÓÒÓÍ ÍÓÏÔ¸˛ÚÂ‡: \n";
+            cout<< "√Å√∞√Æ√±√Æ√™ √™√Æ√¨√Ø√º√æ√≤√•√∞√†: \n";
         int scoreComp = throwBlocksByCommputer();
         countScore(2, scoreComp);
         cout<<"__________"<<endl;
-        cout << "¡ÓÒÓÍ Ë„ÓÍ‡ : \n";
+        cout << "√Å√∞√Æ√±√Æ√™ √®√£√∞√Æ√™√† : \n";
         int scoreUs = throwBlocksByUser();
         countScore(1, scoreUs);
         cout<<"__________"<<endl;
         printScore();
-        cout<<"¬‚Â‰ËÚÂ Î˛·ÓÈ ÒËÏ‚ÓÎ˚‰Îˇ ÔÓ‰ÓÎÊÂÌËˇ Ë„˚."<<endl;
+        cout<<"√Ç√¢√•√§√®√≤√• √´√æ√°√Æ√© √±√®√¨√¢√Æ√´√ª√§√´√ø √Ø√∞√Æ√§√Æ√´√¶√•√≠√®√ø √®√£√∞√ª."<<endl;
         cin>>k;
     }
     getWiner();
